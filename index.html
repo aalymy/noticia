@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atualizações da Guerra Ucrânia X Rússia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+    header {
+      background: linear-gradient(to right, #002868, #ff0000);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .bandeiras {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      gap: 15px;
+    }
+    .bandeiras img {
+      width: 60px;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    article {
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #222;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+    .dark-mode {
+      background: #121212;
+      color: #f4f4f9;
+    }
+    .dark-mode h2 {
+      color: #f4f4f9;
+      border-bottom-color: #444;
+    }
+    .toggle-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #fff;
+      color: #333;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+    .dark-mode .toggle-btn {
+      background: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Atualizações da Guerra Ucrânia X Rússia</h1>
+    <div class="bandeiras">
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg" alt="Bandeira da Rússia">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg" alt="Bandeira da Ucrânia">
+    </div>
+    <button class="toggle-btn" onclick="toggleMode()">🌙 Modo Escuro</button>
+  </header>
+
+  <main>
+    <article>
+      <h2>Notícia</h2>
+      <p>Na noite desta terça-feira (27), a Rússia realizou um ataque massivo com drones contra a infraestrutura de energia e gás de seis regiões ucranianas, resultando na interrupção de fornecimento para mais de 100 mil pessoas.</p>
+      <p>O Ministério da Energia da Ucrânia informou que as regiões de Poltava, Sumy e Chernigov foram as mais afetadas, com danos significativos à infraestrutura de transporte de gás, especialmente em Poltava, além de uma das principais subestações em Sumy.</p>
+      <p>Além dessas, Kharkiv, Zaporizhzhia e Donetsk também sofreram com os ataques. A ação russa é vista como uma tentativa de desestabilizar a infraestrutura civil da Ucrânia, visando dificultar o fornecimento de gás para a temporada de aquecimento.</p>
+      <p>Desde março de 2025, a Ucrânia já contabiliza 2.900 ataques a instalações de energia. A Força Aérea Ucraniana informou que derrubou 74 dos 95 drones lançados, mas 21 atingiram alvos em diversas regiões do país.</p>
+      <img src="guerra-na-Ucrania.jpg" alt="Ataque na Ucrânia">
+    </article>
+
+    <article>
+      <h2>Contexto Histórico da Guerra</h2>
+      <p>As tensões entre Rússia e Ucrânia são de longa data, fundamentadas em laços históricos, culturais e políticos profundos. Ambos os países foram parte da União Soviética (URSS), até sua dissolução em 1991.</p>
+      <p>A separação da URSS resultou na independência da Ucrânia, que começou a buscar aproximação com a União Europeia e a Otan, o que foi visto pela Rússia como ameaça geopolítica.</p>
+      <p>Em 2014, a Rússia anexou a Crimeia e fomentou conflitos separatistas no Donbas. O auge da tensão veio em 2022, com a invasão em larga escala da Ucrânia, alterando a ordem geopolítica mundial.</p>
+      <img src="images.jpeg" alt="Conflito Rússia e Ucrânia">
+    </article>
+  </main>
+
+  <footer>
+    Fonte: <a href="https://www.cnnbrasil.com.br/internacional/russia-ataca-regioes-da-ucrania-e-deixa-100-mil-sem-energia-diz-zelensky/" target="_blank" style="color:#0af;">CNN Brasil</a>
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
